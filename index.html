@@ -4,12 +4,22 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>MK Plumbing & Heating | Loughborough</title>
-    <meta name="description" content="Reliable plumbing and heating services in Loughborough. Gas Safe engineers, boiler repairs, and bathroom installations. Call 07967 138540." />
+    <meta
+      name="description"
+      content="Reliable plumbing and heating services in Loughborough. Gas Safe engineers, boiler repairs, and bathroom installations. Call 07967 138540."
+    />
+
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@700;800;900&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
     <script src="https://elfsightcdn.com/platform.js" async></script>
+
     <style>
       /* Hide Elfsight Widget Title to prevent duplication with our custom header */
       .eapps-widget-toolbar-panel-title,
@@ -22,42 +32,36 @@
         display: none !important;
       }
     </style>
+
     <script>
       tailwind.config = {
         theme: {
           extend: {
             fontFamily: {
-              sans: ['Inter', 'sans-serif'],
-              display: ['Poppins', 'sans-serif'],
+              sans: ["Inter", "sans-serif"],
+              display: ["Poppins", "sans-serif"],
             },
             colors: {
               brand: {
-                navy: '#0B1F33', // Dark Navy (Authority)
-                blue: '#0A4AA6', // Primary Blue (Trust)
-                orange: '#F97316', // Accent Orange (CTA)
-                green: '#16a34a', // Call Action Green
-                light: '#F4F6F8', // Light Grey (Background)
-                grey: '#334155', // Slate 700 (Body Text)
-                white: '#FFFFFF', // Pure White
-              }
-            }
-          }
-        }
-      }
+                navy: "#0B1F33",
+                blue: "#0A4AA6",
+                orange: "#F97316",
+                green: "#16a34a",
+                light: "#F4F6F8",
+                grey: "#334155",
+                white: "#FFFFFF",
+              },
+            },
+          },
+        },
+      };
     </script>
-  <script type="importmap">
-{
-  "imports": {
-    "react-router-dom": "https://esm.sh/react-router-dom@^7.12.0",
-    "react/": "https://esm.sh/react@^19.2.3/",
-    "react": "https://esm.sh/react@^19.2.3",
-    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
-    "lucide-react": "https://esm.sh/lucide-react@^0.562.0"
-  }
-}
-</script>
-</head>
+  </head>
+
   <body class="bg-brand-light text-brand-navy antialiased">
     <div id="root"></div>
+
+    <!-- ✅ REQUIRED: boot the React/Vite app -->
+    <script type="module" src="/index.tsx"></script>
   </body>
 </html>
